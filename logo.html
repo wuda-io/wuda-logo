@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wuda Software Logo</title>
+  <style>
+    .svg-letter {
+      stroke: orangered;
+      stroke-width: 1;
+      fill: orangered;
+      fill-opacity: 0;
+    }
+    .svg-letter-w {
+      stroke-dasharray: 130;
+      stroke-dashoffset: 130;
+      animation: appear-w 3s ease-in infinite;
+    }
+    .svg-letter-u {
+      stroke-dasharray: 90;
+      stroke-dashoffset: 90;
+      animation: appear-u 3s ease-in infinite;
+    }
+    .svg-letter-d {
+      stroke-dasharray: 90;
+      stroke-dashoffset: 90;
+      animation: appear-d 3s ease-in infinite;
+    }
+    .svg-letter-a {
+      stroke-dasharray: 90;
+      stroke-dashoffset: 90;
+      animation: appear-a 3s ease-in infinite;
+    }
+    @keyframes appear-w {
+      0% { stroke-dashoffset: 130; }
+      20% { stroke-dashoffset: 0; fill-opacity: 0; }
+      40% {fill-opacity: 1;}
+      100% { stroke-dashoffset: 0; fill-opacity: 1; }
+    }
+    @keyframes appear-u {
+      20% { stroke-dashoffset: 90; }
+      40% { stroke-dashoffset: 0; fill-opacity: 0; }
+      60% {fill-opacity: 1;}
+      100% { stroke-dashoffset: 0; fill-opacity: 1; }
+    }
+    @keyframes appear-d {
+      40% { stroke-dashoffset: 90; }
+      60% { stroke-dashoffset: 0; fill-opacity: 0; }
+      80% {fill-opacity: 1;}
+      100% { stroke-dashoffset: 0; fill-opacity: 1;}
+    }
+    @keyframes appear-a {
+      60% { stroke-dashoffset: 90; }
+      80% { stroke-dashoffset: 0; fill-opacity: 0; }
+      100% { stroke-dashoffset: 0; fill-opacity: 1; }
+    }
+  </style>
+</head>
+<body style="background-color: black;">
+  <div class="logo" style="width: 500px; margin: 5em auto;">
+    <svg class="svg-wuda" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 30">
+      <path class="svg-letter svg-letter-w" d="M9.3 2.5H2v20.8l6.2 4.2H27l6.2-4.2V2.5H27l-5.2 5.2V2.5h-6.3L9.3 7.7z"/>
+      <path class="svg-letter svg-letter-u" d="M39.2 2.6L61 2.5V18c0 7.7-5.5 9.5-11 9.5-5.4 0-10.5-2-10.8-9.5z"/>
+      <path class="svg-letter svg-letter-d" d="M67 2.5v25h11.5s12.2-.4 12.1-12.7c0-12.2-12-12.3-12-12.3z"/>
+      <path class="svg-letter svg-letter-a" d="M93.3 27.5l9.2-25h7.4l9.1 25z"/>
+    </svg>
+  </div>
+</body>
+</html>
